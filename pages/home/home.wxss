@@ -1,0 +1,290 @@
+page {
+  background-color: #f5f5f5;
+}
+
+/* 顶部退出按钮样式 */
+/* 
+.bgNav{
+  width: 100%;
+  height: 132rpx;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(right,#ff45cb,#ff4a3c);
+  font-size: 44rpx;
+  line-height: 122rpx;
+  text-align: center;
+  padding-top: 20rpx;
+  color: #ffffff;
+} */
+/* 导航栏 */
+.top {
+  width: 100%;
+  height: 98rpx;
+  background: -webkit-linear-gradient(right, #ff45cb, #ff4a3c);
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.top-left,
+.top-right {
+  width: 48rpx;
+  float: left;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: center;
+  margin-top: 14rpx;
+  color: #ffffff;
+}
+
+.top-left {
+  margin-right: 24rpx;
+}
+
+.top-right {
+  margin-left: 24rpx;
+}
+
+.top-left image,
+.top-right image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-bottom: 6rpx;
+}
+
+.top-center {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin: 14rpx 0;
+  position: relative;
+  padding: 10rpx 0;
+}
+
+.top-center .search {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 36rpx;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 72rpx;
+}
+
+.top-center .search h1,
+.top-center .search h2 {
+  display: block;
+  position: absolute;
+  top: 14rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.top-center .search h1 {
+  left: 20rpx;
+}
+
+.top-center .search h2 {
+  right: 20rpx;
+}
+
+.top-center .search h1 image,
+.top-center .search h2 image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.top-center .search input {
+  width: 100%;
+  height: 100%;
+  font-size: 36rpx;
+}
+
+/* 轮播图 */
+.banner {
+  height: 210rpx;
+  background: -webkit-linear-gradient(right, #ff45cb, #ff4a3c);
+  position: relative;
+}
+
+.banner .imgs {
+  width: 92%;
+  height: 370rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.banner .imgs image {
+  width: 100%;
+  height: 370rpx;
+  border-radius: 10px;
+}
+
+/* 列表 */
+.list {
+  width: 100%;
+  height: 370rpx;
+  padding-top: 160rpx;
+  background-color: #ffffff;
+  margin-bottom: 24rpx;
+  border-radius: 0 0 20rpx 20rpx;
+}
+
+.list .ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30rpx 13rpx;
+}
+
+.list .ul .li {
+  width: 25%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+}
+
+.list .ul .li image {
+  width: 104rpx;
+  height: 104rpx;
+}
+
+.list .ul .li h1 {
+  display: block;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+/* 商品卡片 */
+.cart {
+  width: 100%;
+  height: 580rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  margin-bottom: 24rpx;
+}
+
+.cart .title {
+  width: 100%;
+  height: 92rpx;
+  box-sizing: border-box;
+  padding: 0 28rpx;
+  padding-top: 28rpx;
+  border-bottom: 2px solid #dedede;
+}
+
+.cart .title h1 {
+  display: block;
+  width: 176rpx;
+  height: 44rpx;
+  font-size: 44rpx;
+  line-height: 44rpx;
+  float: left;
+}
+
+.cart .title h2 {
+  display: block;
+  width: 106rpx;
+  height: 32rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  float: right;
+  margin-top: -1rpx;
+}
+
+.cart .title h2 image {
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #ff4a3c;
+  margin-left: 6rpx;
+  border-radius: 50%;
+  margin-top: 2rpx;
+}
+
+.cart .goods {
+  width: 100%;
+  height: 230rpx;
+  box-sizing: border-box;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+
+.cart .goods image {
+  width: 200rpx;
+  height: 100%;
+  float: left;
+  padding-right: 30rpx;
+}
+
+.cart .goods .box {
+  width: 65%;
+  height: 200rpx;
+  float: right;
+}
+
+.cart .goods .box h1 {
+  height: 64rpx;
+  display: block;
+  font-size: 30rpx;
+  line-height: 32rpx;
+  margin-bottom: 64rpx;
+  overflow: hidden;
+}
+
+.cart .goods .box h2 {
+  display: block;
+  width: 172rpx;
+  height: 40rpx;
+  display: flex;
+  margin-bottom: 12rpx
+}
+
+.cart .goods .box h2 h3 {
+  display: block;
+  height: 100%;
+  flex: 1;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  border: 2px solid #ff4a3c;
+  border-radius: 24rpx;
+  text-align: center;
+  color: #ff4a3c;
+  font-weight: bold;
+}
+
+.cart .goods .box h4 {
+  height: 36rpx;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  margin-bottom: 12rpx;
+  color: #ff4a3c;
+  font-weight: bold;
+}
+
+.cart .goods .box h5 {
+  display: block;
+  width: 250rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #999999;
+  padding-top: 6rpx;
+}
+
+.cart .goods .box h5 image {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0;
+}

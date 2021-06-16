@@ -1,0 +1,43 @@
+<view class="header">
+   <form>
+    <checkbox></checkbox>
+    <h1 style="margin-left: 16rpx;">全选</h1> 
+  </form> 
+  <h2 style="float: right;">完成</h2>
+</view> 
+
+<view class="lists" wx:for="{{goodsList}}" wx:if="{{goodsList.length}}" wx:key="*this" bindlongtap="showPopup">
+  <van-cell title="展示弹出层" is-link bind:click="showPopup" />
+  <van-popup show="{{ show }}" bind:close="onClose">
+    <view class="van-content" catchtap="del"  data-index="{{index}}">删除</view>
+  </van-popup>
+  <!-- bindlongtap长按事件 -->
+  <form>
+    <checkbox></checkbox>
+  </form>
+  <view class="lists-img">
+    <image src="{{item.goodsImage}}"></image>
+  </view>
+  <view class="h1" style="font-size:28rpx">
+    {{item.goodsName}}
+    <view class="h2" style="color: #dedede;">袋装</view>
+    <view class="h3" style="color: #fd4454;">￥{{item.goodsPrice}}</view>
+  </view>
+  <view class="btn">
+    <view class="left" bindtap="reduce" data-index="{{index}}">-</view>
+    <view class="center" bindchange="bindManual">{{item.num}}</view>
+    <view class="right" bindtap="add" data-index="{{index}}">+</view>
+  </view>
+ 
+</view>
+
+<view class="footer" bindtap="gopay" >
+  <view class="right" >结算({{goodsList.length}})</view>
+  <view class="left">合计:<label style="color: #fd4454;">￥{{totalData}}</label></view>
+</view>
+
+<!-- 没有商品时 -->
+<view class="goodsNull" wx:if="{{!goodsList.length}}" >
+    <image src="../../images/font/购物车 (1).png"></image>
+    <view class="text">购物车空的，请去选择商品.</view>
+</view> 

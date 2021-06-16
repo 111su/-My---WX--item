@@ -1,0 +1,79 @@
+ <!-- <view class="bgNav">商城</view> -->
+<!-- 导航栏 -->
+<view class="top">
+  <view class="top-left" wx:for="{{imgs}}" wx:key="*this">
+    <image src="{{item.url}}"></image>
+    {{item.text}}
+  </view>
+
+  <view class="top-center">
+    <view class="search">
+      <input type="text" placeholder="输入关键字搜索" />
+      <h1>
+        <image src="../../images/font/搜索.png"></image>
+      </h1>
+      <h2>
+        <image src="../../images/font/相机.png"></image>
+      </h2>
+    </view>
+  </view>
+
+  <view class="top-right" wx:for="{{imgss}}" wx:key="*this">
+    <image src="{{item.url}}"></image>
+    {{item.text}}
+  </view>
+</view>
+<!-- 轮播图 -->
+<view class="banner">
+  <view class="imgs">
+    <swiper indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#007AAE" autoplay="true"
+      interval="5000" style="height:100%; overflow: hidden;transform: translateY(0);border-radius: 20rpx;">
+      <!-- 还要加上 transform: translateY(0); 直角可以消失 -->
+      <!-- 注意：for必须添加wx:key -->
+      <block wx:for="{{banner}}" wx:key="*this">
+        <swiper-item>
+          <view>
+            <!-- 注意双标签 -->
+            <image src="{{item}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<!-- 列表 -->
+<view class="list">
+  <view class="ul">
+    <view class="li" wx:for="{{lists}}" wx:key="*this" >
+      <image src="{{item.url}}"></image>
+      <h1>{{item.text}}</h1>
+    </view>
+  </view>
+</view>
+<!-- 商品卡片 -->
+<view class="cart" bindtap="navtab">
+  <view class="title">
+    <h1>推荐商品</h1>
+    <h2>更多<image src="../../images/font/右箭头.png"></image>
+    </h2>
+  </view>
+  <view class="goods" wx:for="{{goodsList}}" wx:key="*this">
+    <image src="{{item.goodsImage}}"></image>
+    <!-- <view class="box" url="/pages/goods/goods?id={{item.id}}" open-type="switchTab" hover-class="none"> -->
+    <navigator url="../goods/goods?id={{item.id}}" class="box">
+      <h1>{{item.goodsName}}</h1>
+    
+      <!-- <h2>
+        <h3 style="margin-right: 6rpx;">补水</h3>
+        <h3>进口</h3>
+      </h2> -->
+      <h4>￥{{item.goodsPrice}}</h4>
+      <h5>
+        <label style="float: left;">兰希旗舰店  进店</label>
+        <label style="float: right;"><image src="../../images/font/右箭头2.png"></image></label>
+      </h5>
+    <!-- </view> -->
+  </navigator>
+  </view>
+  
+</view>

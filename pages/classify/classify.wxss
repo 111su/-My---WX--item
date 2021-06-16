@@ -1,0 +1,74 @@
+/* pages/category/category.wxss */
+.categoryitem{
+    width: 23%;
+    height: 300px;
+    float: left;
+}
+.categoryitem .item{
+    /* min-height: 400px; */
+    background-color: #dedede;
+}
+.categoryitem .item view{
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 44rpx;
+    color:#999999;
+    width: 100%;
+    position: relative;
+}
+.categoryitem .item view.con{
+    background-color: #fff;
+    color: #fd4454;
+}
+.categoryitem .item view.con::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top:30rpx;
+    left:0rpx;
+    width: 6rpx;
+    height: 40rpx;
+    background-color: #fd4454;
+    
+}
+
+.contentitem{
+    width:75%;
+    height: 300px;
+    float: left;
+}
+.content{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40rpx;
+}
+.content image{
+    width: 100%;
+}
+.content .ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content .ul .title{
+    width: 100%;
+    height: 112rpx;
+    font-size: 44rpx;
+    line-height: 112rpx;
+    font-weight: bold;
+}
+.content .ul .li{
+    width: 33.33%;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.content .ul .li image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.content .ul .li text{
+    display: block;
+    text-align: center;
+    font-size: 30rpx;
+}

@@ -1,0 +1,146 @@
+page{
+  background-color: #f5f5f5;
+}
+.order{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.order .content{
+  width: 100%;
+  height: 226rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  display: flex;
+  border-radius: 22rpx;
+  box-shadow: 0rpx 0rpx 12rpx 4rpx #dedede;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+.order .content-left{
+  height: 100%;
+  flex: 9;
+}
+.order .content-left h1{
+  display: block;
+  color: #737373;
+  margin-bottom: 36rpx;
+}
+.order .content-left h2{
+  display: block;
+  height: 80rpx;
+  font-size: 36rpx;
+  line-height: 40rpx;
+  margin: 3rpx 0;
+}
+
+.order .content-right{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.order .content-right image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.order .order-goods{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  border-radius: 22rpx;
+    box-shadow: 0rpx 0rpx 12rpx 4rpx #dedede;
+}
+
+.order .order-goods h4{
+  display: block;
+  width: 100%;
+  height: 40rpx;
+  font-size: 40rpx;
+  line-height: 40rpx;
+  margin: 3rpx 0;
+}
+.order .order-goods h4 image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.order .order-goods .goodslist{
+  width: 100%;
+  height: 148rpx;
+  margin-top: 40rpx;
+  display: flex;
+}
+.order .order-goods .goodslist h1{
+  flex: 1;
+  margin-right: 24rpx;
+}
+.order .order-goods .goodslist h1 image{
+  width: 148rpx;
+  height: 148rpx;
+}
+.order .order-goods .goodslist h2{
+  flex: 3;
+}
+.order .order-goods .goodslist h2 h3{
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.order .order-goods .goodslist h2 h4{
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  color: #dedede;
+}
+
+.order .order-goods .goodslist h2 h5{
+  display: block;
+  font-size: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  margin-top: 10rpx;
+}
+
+.order .order-goods .goodslist h2 h5 label{
+  float: right;
+  font-size: 24rpx;
+  color: #333333;
+}
+.order .order-goods textarea{
+  width: 100%;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+
+.orderpay{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 2px solid #dedede;
+  background-color: #ffffff;
+  line-height: 100rpx;
+}
+.orderpay .left{
+  float: left;
+  width: 66.6%;
+  height: 100%;
+  color: #ff4a3f;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  font-weight: bold;
+}
+.orderpay .right{
+  float: right;
+  width: 33.3%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ff4a3f;
+}

@@ -1,0 +1,130 @@
+page{
+  background-color: #f5f5f5;
+}
+.header{
+  width: 100%;
+  height: 76rpx;
+  box-sizing: border-box;
+  padding: 16rpx 28rpx;
+  line-height: 44rpx;
+  margin-bottom: 15rpx;
+  background-color: #ffffff;
+}
+.header form{
+  float: left;
+  color: #333333;
+}
+.header form checkbox{
+  width: 44rpx;
+  height: 44rpx;
+  box-sizing: border-box;
+}
+.lists{
+  width: 100%;
+  height: 210rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  padding: 34rpx 20rpx 32rpx 28rpx;   
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-items: center;
+  position: relative;
+}
+/* 弹出层内容 */
+.lists van-popup .van-content{
+  width: 300rpx;
+  height: 60rpx;
+  background-color: #ffffff;
+  color: #ff4a3c;
+  text-align: center;
+  line-height: 60rpx;
+}
+.lists form{
+  margin: 50rpx 0 0 0rpx;
+}
+.lists form checkbox{
+  width: 44rpx;
+  height: 44rpx;
+}
+.lists .lists-img{
+  flex: 0 0 144rpx;
+  height: 144rpx;
+  margin: 0 16rpx;
+}
+.lists .lists-img image{
+  width: 144rpx;
+  height: 144rpx;
+}
+.lists image .h1{
+  width: 100%;
+  height: 64rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+.lists image .h1 .h2{
+  height: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  margin-top: 8rpx;
+}
+.lists .btn{
+  width: 150rpx;
+  height: 44rpx;
+  text-align: center;
+  position: absolute;
+  right: 20rpx;
+  bottom: 32rpx;
+  display: flex;
+  font-size: 32rpx;
+}
+.lists .btn .left,
+.lists .btn .right{
+  width: 40rpx;
+  height: 100%;
+  line-height: 44rpx;
+}
+.lists .btn .center{
+  width: 70rpx;
+  height: 100%;
+  background-color: #dedede;
+}
+
+.footer{
+  width: 100%;
+  height: 90rpx;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  border-bottom: 1px solid #dedede;
+  font-size: 40rpx;
+}
+.footer .right{
+  float: right;
+  width: 220rpx;
+  height: 100%;
+  background-color: #fd4454;
+  text-align: center;
+  line-height: 90rpx;
+  color: #ffffff;
+}
+.footer .left{
+  margin: 24rpx;
+}
+
+.goodsNull{
+  text-align: center;
+  font-size: 40rpx;
+  color:#929292;
+  margin-bottom: 200rpx;
+}
+.goodsNull .iconfont{
+  font-size: 120rpx;
+  margin: 40rpx;
+}
+.goodsNull image{
+  width: 50%;
+  height: 120px;
+  display: inline-block;
+  margin: 0 auto;
+}

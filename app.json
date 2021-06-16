@@ -1,0 +1,58 @@
+{
+  "pages":[ 
+    "pages/goods/goods",
+    "pages/order/order",
+    "pages/pay/pay",
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/logs/logs" ,
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff4a3c",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#989898",
+    "selectedColor":"#6AC3AB",
+    "backgroundColor":"transparent",
+    "borderStyle":"white",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath":"./images/font/首页.png",
+        "selectedIconPath":"./images/font/首页 (1).png"
+      },
+      {
+        "pagePath":"pages/classify/classify",
+        "text":"分类",
+        "iconPath":"./images/font/分类.png",
+        "selectedIconPath":"./images/font/分类 (1).png"
+      },
+      {
+        "pagePath":"pages/cart/cart",
+        "text":"购物车",
+        "iconPath":"./images/font/购物车.png",
+        "selectedIconPath":"./images/font/购物车 (1).png"
+      },
+      {
+        "pagePath":"pages/mine/mine",
+        "text":"我的",
+        "iconPath":"./images/font/我的.png",
+        "selectedIconPath":"./images/font/我的 (1).png"
+      }
+    ]
+  },
+ 
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/button/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
+  },
+ 
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,105 @@
+<view class="goods">
+  <view class="banner">
+    <view class="imgs">
+      <swiper indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#007AAE" autoplay="true"
+        interval="5000" style="height:100%; overflow: hidden;transform: translateY(0);border-radius: 20rpx;">
+        <!-- 还要加上 transform: translateY(0); 直角可以消失 -->
+        <!-- 注意：for必须添加wx:key -->
+        <block wx:for="{{goods.goodsImgs}}" wx:key="*this">
+          <swiper-item>
+            <view>
+              <!-- 注意双标签 -->
+              <image src="{{item.pics_big}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="text">
+    <h1>{{goods.goodsName}}</h1>
+    <h2>￥{{goods.goodsPrice}}<label>￥{{goods.goodsPriceOld}}</label><text>不含物流费用</text></h2>
+    <h3>售量100</h3>
+  </view>
+</view>
+
+<view class="details">
+  <view class="select" bindtap="turn">
+    选择规格
+    <image src="../../images/font/右箭头2.png"></image>
+
+    <!-- 弹出内容 -->
+    <van-popup show="{{ show }}" closeable close-icon="close" position="bottom" custom-style="height: 76%"
+      bind:close="onClose" catchtap="turnq">
+      <view class="van">
+        <h1>
+          <image src="../../images/tea.jpeg"></image>
+        </h1>
+        <h2>武岩山茶</h2>
+        <h3>￥99</h3>
+        <h4>库存1000件</h4>
+      </view>
+      <view class="van-list">
+        <view class="ul">
+          <text>容量</text>
+          <view class="li">100g</view>
+          <view class="li">200g</view>
+          <view class="li">300g</view>
+        </view>
+        <view class="ul">
+          <text>包装</text>
+          <view class="li">盒装</view>
+          <view class="li">袋装</view>
+        </view>
+        <view class="num">
+          <text>购买数量</text>
+          <view class="btn">
+            <view class="left">-</view>
+            <view class="center">1</view>
+            <view class="right">+</view>
+          </view>
+        </view>
+        <view class="btnn">确定</view>
+      </view>
+    </van-popup>
+
+  </view>
+  <view class="select">
+    产品参数
+    <image src="../../images/font/右箭头2.png"></image>
+  </view>
+  <view class="select" style="border-bottom: 4rpx solid #dedede;">
+    产品详情
+    <image src="../../images/font/右箭头2.png"></image>
+  </view>
+
+  <view class="text">
+    {{text.goods_name}}
+  </view>
+  <view>
+        <rich-text nodes="{{goods.goodsDetails}}"></rich-text>
+        <!-- <template is="wxParse" data="{{wxParseData:goods_introduce.nodes}}"/> -->
+    </view>
+</view>
+
+<view class="footnav">
+  <view class="leftnav">
+    <view class="left">
+      <h1 bindtap="goHome">
+        <image src="../../images/font/首页2.png"></image><text>首页</text>
+      </h1>
+      <h1>
+        <image src="../../images/font/分享.png"></image><text>分享</text>
+      </h1>
+      <h1 bindtap="goCart">
+        <image src="../../images/font/购物车2.png"></image><text>购物车</text>
+        <h2>{{num}}</h2>
+      </h1>
+    </view>
+  </view>
+  <view class="right">
+    <view class="add" bindtap="getCart">加入购物车</view>
+    <view class="buy" bindtap="goPay">立即购买</view>
+  </view>
+
+</view>

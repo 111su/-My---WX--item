@@ -1,0 +1,19 @@
+<scroll-view scroll-y="true" class="categoryitem" style="height:{{scrollHeigth}}px">
+    <view class="item" style="min-height:{{scrollHeigth}}px">
+        <view class="{{conId == index?'con':''}}" data-id="{{index}}" bindtap="setId" wx:for="{{categoryItem}}" wx:key="*this">
+            {{item}}
+        </view>
+    </view>
+</scroll-view>
+
+<scroll-view scroll-y="true" class="contentitem" style="height:{{scrollHeigth}}px">
+    <view class="content"  style="min-height:{{scrollHeigth}}px">
+        <view class="ul">
+            <view class="title">热销手机</view>
+            <view class="li" wx:for="{{content[conId]}}">
+                <image  src="{{item.img}}"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>

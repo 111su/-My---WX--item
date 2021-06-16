@@ -1,0 +1,36 @@
+<view class="order">
+  <view class="content">
+    <view class="content-left">
+      <h1>猴子先生 18320677217</h1>
+      <h2>广东广州市天河区广东广州市天河区广东广州市天河区</h2>
+    </view>
+    <view class="content-right">
+      <image src="../../images/font/右箭头2.png"></image>
+    </view>
+  </view>
+
+  <view class="order-goods" wx:for="{{goodsList}}" wx:key="*this">
+    <view class="top">
+      <h4>
+        <image src="../../images/font/相机.png"></image>
+        茶道旗靓店
+      </h4>
+    </view>
+    <view class="goodslist">
+      <h1>
+        <image src="{{item.goodsImage}}"></image>
+      </h1>
+      <h2>
+        <h3>{{item.goodsName}}</h3>
+        <h4>袋装</h4>
+        <h5>￥{{item.goodsPrice}}<label>数量x{{item.num}}</label></h5>
+      </h2>
+    </view>
+    <textarea name="备注"  cols="1" rows="1" placeholder="订单备注"></textarea>
+  </view>
+</view>
+
+<view class="orderpay">
+  <view class="left">合计: ￥{{totalData}}</view>
+  <view class="right" bindtap="goOrder">提交订单</view>
+</view>

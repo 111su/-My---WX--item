@@ -1,0 +1,8 @@
+<view class="order">
+  <view class="order-box">
+    <view class="top">
+      <image src="../../images/back.png"></image>
+    </view>
+    <view class="bottom" bindtap="goHome">下单完成，继续挑选商品</view>
+  </view>
+</view>
